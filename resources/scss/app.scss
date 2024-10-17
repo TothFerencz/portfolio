@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* 0.08 = 8% opacity */
+
+	@media screen and (max-width: 1200px) {
+		font-size: 14px;
+	}
+
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	font-family: "Urbanist", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
