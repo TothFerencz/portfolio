@@ -1,35 +1,28 @@
-@vite('resources/scss/sections/header.scss')
-<section class="header bg-white p-8 max-w-full mx-auto">
-    <div
-        class="min-h-screen flex flex-col md:flex-row lg:justify-between max-w-6xl mx-auto px-4 lg:-mt-12 md:mt-12 justify-center items-center">
-
-        <!-- Avatar Image (Top on mobile view) -->
-        <div class="order-1 md:order-2"> <!-- Adjust order for mobile view -->
-            <div class="avatar-border">
-                <img src="./assets/memoji.png" alt="Avatar" class="w-52 h-52 rounded-full mx-auto md:mx-0 avatar">
-            </div>
-        </div>
-
-        <!-- Text Content (Bottom on mobile view) -->
-        <div class=" text-center md:text-left order-2 md:order-1 mt-0 md:mt-4 text-content">
-            <!-- Adjust order and margin for mobile view -->
-            <p class="position-headline">Full Stack Fejlesztő</p>
-            <h1 class="name-headline mt-4">Toth Ferencz</h1>
-            <p class="paragraph-headline mt-4">
-                Full Stack Fejlesztő, Románia, Érsemjén <br>
-                Jelenlegi munkahely: Pomscloud
-            </p>
-
-            <div class="flex flex-row flex-wrap mt-6 space-x-4 items-center ml-10 md:ml-0">
-                <a href="#about-me"
-                    class="bg-black text-white px-6 py-2 rounded-full font-bold hover:bg-gray-800 transition">
-                    Rólam
-                </a>
-                <!-- Copy Email Button -->
-                <a href="#" class="text-black px-6 py-2 rounded-full font-bold border-2">
-                    Projektek
-                </a>
-            </div>
-        </div>
+<section
+    class="header-section flex flex-col md:flex-row items-center lg:justify-between px-4 py-8 md:px-20 md:py-24 bg-white h-screen max-w-7xl mx-auto justify-center">
+    <!-- Illustration -->
+    <div class="illustration order-1 md:order-2 mt-8 md:mt-0 md:ml-12">
+        <img src="/assets/me.svg" alt="Illustration of a developer" class="max-w-xs md:max-w-sm">
     </div>
+
+    <!-- Text Content -->
+    <div class="text-center md:text-left order-2 md:order-1 mt-0 sm:mt-12">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight">
+            Hello I’m <span class="text-black font-bold">Ferencz Toth.</span>
+        </h1>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <span class="text-black">Full Stack</span> <span class="outlined-text">Developer</span>
+        </h1>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight">
+            Based In <span class="text-black font-bold">Romania.</span>
+        </h1>
+        <p class="text-gray-600 text-xs sm:text-sm md:text-base mt-4">
+            I'm Ferencz. Programming has been a passion of mine since childhood, and I’m now focused on web development.
+            I’m dedicated to continuous learning and eager to enhance my skills. I thrive on solving new problems and
+            enjoy working on diverse projects.
+        </p>
+        <!-- Social Icons -->
+
+    </div>
+
 </section>

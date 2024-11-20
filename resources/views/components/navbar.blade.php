@@ -1,49 +1,54 @@
-<nav id="navbar" class="w-full p-6 top-0 left-0 bg-white flex justify-between items-center fixed">
-    <!-- Container for Logo and Button -->
-    <div class="max-w-6xl mx-auto flex justify-between items-center w-full px-4">
-        <!-- Logo Section -->
-        <div class="flex items-center">
-            <a href="#" class="text-gray-500 hover:text-black mr-6">
-                <!-- Add your logo here -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+<nav id="navbar" class="w-full bg-white fixed top-0 left-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center py-6">
+        <!-- Bal oldal: Logo -->
+        <div class="flex items-center space-x-2">
+            <div class="logo">
+                <!-- Logó helye -->
+                <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.5294 12.2118C23.5294 16.8819 20.7623 20.9082 16.7793 22.7351C18.4612 21.3496 19.5322 19.248 19.5322 16.896C19.5322 12.7642 16.2259 9.40423 12.112 9.32046C12.0574 9.3167 12.0075 9.3167 11.9529 9.3167C11.8983 9.3167 11.8485 9.3167 11.7939 9.32046C10.2673 9.40328 9.05882 10.6663 9.05882 12.2108V26.6814C9.05882 31.4748 5.16988 35.3638 0.376465 35.3638V12.2118C0.376465 5.81928 5.56047 0.635284 11.9529 0.635284C18.3454 0.635284 23.5294 5.81928 23.5294 12.2118Z"
+                        fill="black" />
+                    <path
+                        d="M13.9992 14.2582C15.1294 13.128 15.1294 11.2956 13.9992 10.1654C12.8689 9.03515 11.0365 9.03515 9.90629 10.1654C8.77608 11.2956 8.77608 13.128 9.90629 14.2582C11.0365 15.3884 12.8689 15.3884 13.9992 14.2582Z"
+                        fill="black" />
                 </svg>
-            </a>
+            </div>
+            <span class="font-bold text-xl">Ferencz</span>
         </div>
 
-        <!-- Icon Section (Centered) -->
-        <div class="flex space-x-6 mx-auto">
-            <a href="#" class="text-gray-500 hover:text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                </svg>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                </svg>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776" />
-                </svg>
-            </a>
+        <!-- Középső menü -->
+        <div id="menu" class="hidden md:flex space-x-8">
+            <a href="#about" class="text-xs sm:text-sm md:text-base transition">About Me</a>
+            <a href="#skills" class="text-xs sm:text-sm md:text-base transition">Skills</a>
+            <a href="#projects" class="text-xs sm:text-sm md:text-base transition">Project</a>
+            <a href="#contact" class="text-xs sm:text-sm md:text-base transition">Contact Me</a>
         </div>
 
-        <!-- Hire Me Button -->
-        <a href="#" class="bg-black text-white px-6 py-2 rounded-full font-bold hover:bg-gray-800 transition">
-            Kapcsolat
-        </a>
+        <!-- Jobb oldal: Hamburger Menu Button -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black flex flex-col items-center justify-center z-50">
+        <button id="close-btn" class="absolute top-4 right-4 focus:outline-none">
+            <svg class="w-6 h-6 close-icon mt-4 mr-2" fill="none" stroke="white" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <a href="#about" class="block py-2 px-4  text-white hover:bg-gray-200">About Me</a>
+        <a href="#skills" class="block py-2 px-4  text-white hover:bg-gray-200">Skills</a>
+        <a href="#projects" class="block py-2 px-4  text-white hover:bg-gray-200">Project</a>
+        <a href="#contact" class="block py-2 px-4  text-white hover:bg-gray-200">Contact Me</a>
     </div>
 </nav>
+
 <script>
     document.addEventListener('scroll', function() {
         const navbar = document.getElementById('navbar');
@@ -53,4 +58,35 @@
             navbar.classList.remove('shadow-md');
         }
     });
+
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        const menu = document.getElementById('menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('hidden');
+        this.classList.toggle('open');
+    });
+
+    document.getElementById('close-btn').addEventListener('click', function() {
+        const menu = document.getElementById('menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menu.classList.add('hidden');
+        mobileMenu.classList.add('hidden');
+        document.getElementById('menu-btn').classList.remove('open');
+    });
 </script>
+
+<style>
+    #menu-btn.open svg {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
+
+    .close-icon {
+        transition: transform 0.3s ease;
+    }
+
+    #close-btn:hover .close-icon {
+        transform: rotate(90deg);
+    }
+</style>

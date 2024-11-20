@@ -1,7 +1,9 @@
 <?php
 
+use App\Models\Stacks;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('pages/home/app');
+    $stacks = Stacks::all();
+    return view('pages/home/app', ['stacks' => $stacks]);
 });
