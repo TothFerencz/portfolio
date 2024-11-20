@@ -18,10 +18,10 @@
 
         <!-- Középső menü -->
         <div id="menu" class="hidden md:flex space-x-8">
-            <a href="#about" class="text-xs sm:text-sm md:text-base transition">About Me</a>
-            <a href="#skills" class="text-xs sm:text-sm md:text-base transition">Skills</a>
-            <a href="#projects" class="text-xs sm:text-sm md:text-base transition">Project</a>
-            <a href="#contact" class="text-xs sm:text-sm md:text-base transition">Contact Me</a>
+            <a href="#about" class="font-bold">About Me</a>
+            <a href="#skills" class="font-bold">Skills</a>
+            <a href="#projects" class="font-bold">Project</a>
+            <a href="#contact" class="font-bold">Contact Me</a>
         </div>
 
         <!-- Jobb oldal: Hamburger Menu Button -->
@@ -36,7 +36,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden fixed inset-0 bg-black flex flex-col items-center justify-center z-50">
         <button id="close-btn" class="absolute top-4 right-4 focus:outline-none">
-            <svg class="w-6 h-6 close-icon mt-4 mr-2" fill="none" stroke="white" viewBox="0 0 24 24"
+            <svg class="w-6 h-6 close-icon mt-4 ml-2" fill="none" stroke="white" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -88,5 +88,10 @@
 
     #close-btn:hover .close-icon {
         transform: rotate(90deg);
+    }
+
+    a {
+        font-family: "Sora", sans-serif;
+        color: #000;
     }
 </style>

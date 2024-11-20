@@ -7,21 +7,19 @@
 
     <!-- Text Content -->
     <div class="text-center md:text-left order-2 md:order-1 mt-0 sm:mt-12">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight ">
             Hello I’m <span class="text-black font-bold">Ferencz Toth.</span>
         </h1>
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mt-4">
             <span class="text-black">Full Stack</span> <span class="outlined-text">Developer</span>
         </h1>
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  leading-tight mt-4">
             Based In <span class="text-black font-bold">Romania.</span>
         </h1>
         <p class="text-gray-600 text-xs sm:text-sm md:text-base mt-4">
             I'm Ferencz. Programming has been a passion of mine since childhood, and I’m now focused on web development.
-            I’m dedicated to continuous learning and eager to enhance my skills. I thrive on solving new problems and
-            enjoy working on diverse projects.
+
         </p>
-        <!-- Social Icons -->
 
     </div>
 
